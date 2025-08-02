@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de Currículo</h1>
+        <p>Preencha os campos abaixo e baixe seu CV em PDF.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <form id="cv-form">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="linkedin">Perfil LinkedIn (URL):</label>
+                    <input type="url" id="linkedin" name="linkedin">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiência Profissional</legend>
+                    <div class="experience-entry">
+                        <label for="cargo1">Cargo:</label>
+                        <input type="text" id="cargo1" name="cargo[]">
+
+                        <label for="empresa1">Empresa:</label>
+                        <input type="text" id="empresa1" name="empresa[]">
+
+                        <label for="periodo1">Período (Ex: 2020 - 2023):</label>
+                        <input type="text" id="periodo1" name="periodo[]">
+
+                        <label for="descricao1">Descrição das Atividades:</label>
+                        <textarea id="descricao1" name="descricao[]" rows="4"></textarea>
+                    </div>
+                    <button type="button" id="add-exp-btn">Adicionar Experiência</button>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formação Acadêmica</legend>
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" name="curso">
+
+                    <label for="instituicao">Instituição:</label>
+                    <input type="text" id="instituicao" name="instituicao">
+                </fieldset>
+
+                <button type="submit" class="submit-btn">Gerar PDF</button>
+            </form>
+        </div>    
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
