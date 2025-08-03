@@ -20,4 +20,5 @@ Uma aplicação web full-stack que permite ao usuário preencher um formulário 
 
 ## 🚀 Link para o Projeto Online
 
-*A ser adicionado após o deploy.*
+https://geradorcv.infy.uk/
+*Hospedado no InfinityFree* 
