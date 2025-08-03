@@ -20,4 +20,4 @@ Uma aplicação web full-stack que permite ao usuário preencher um formulário 
 
 ## 🚀 Link para o Projeto Online
 
-*A ser adicionado após o deploy, quando eu encontrar hospedagem gratuita que rode o PHP.*
+*A ser adicionado após o deploy.*
